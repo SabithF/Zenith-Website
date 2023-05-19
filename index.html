@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenith</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,6 +20,8 @@
         <li><a href="#location">Location</a></li>
     </ul>
 
+    
+
 </header>
 <section class="main-slider">
     <div class="slider">
@@ -25,10 +30,12 @@
     </div>
 </section>
 
-<section class="home">
-    <div class="left-box">
-        <h2>OUR STORY</h2>
-        <p>Zenith Gemology is a unique gem laboratory that 
+<section class="home" >
+    <div class="left-box parallelogram" id="parallelogram">
+        <div class="parallelogram-content content">
+        
+        <h2 data-aos="fade-up" data-aos-duration="1500">OUR STORY</h2>
+        <p data-aos="fade-up" data-aos-duration="1800">Zenith Gemology is a unique gem laboratory that 
             specializes in testing gemstones and certification 
             services. With years of experience in the industry, 
             our team of expert gemologists are dedicated to 
@@ -36,7 +43,7 @@
             of gemstone quality and authenticity.
             </p>
             <br>
-            <p>Zenith Gemology is a unique gem laboratory that 
+            <p data-aos="fade-up" data-aos-duration="3000">Zenith Gemology is a unique gem laboratory that 
                 specializes in testing gemstones and certification 
                 services. With years of experience in the industry, 
                 our team of expert gemologists are dedicated to 
@@ -50,12 +57,21 @@
                 of gemstone quality and authenticity.</p>
 
     </div>
-    <div class="right-box">
+</div>
+    <div class="right-box" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <img src="img/weblogo.png" alt="logo">
     </div>
 </section>
-    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+
+</script>
 </body>
 
-<script src="js/script.js"></script>
+
 </html>

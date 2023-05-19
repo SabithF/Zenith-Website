@@ -48,19 +48,35 @@ header{
 }
 
 .left-box{
-    width: 40%;
+    width: 60%;
     padding: 20px;
     background-color: rgba(26, 1, 26, 0.5);
     color: white;
     font-size: 22px;
-    margin-left: 100px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     height: 100%;
+    transition: width 1.5s, transform 1.5s;
+
 
 }
+.parallelogram {
+    transform: skewX(-20deg);
+    width: 70%;
+  }
+  
+  .parallelogram-content {
+    transform: skewX(20deg);
+    transition: transform 0.5s;
+  }
+
+  .left-box p{
+    margin-left: 60px;
+    margin-right: 60px;
+    
+  }
 
 .left-box h2{
     display: flex;
@@ -69,7 +85,11 @@ header{
     align-items: start;
     font-size: 25px;
     text-align: left;
+    margin-left: 60px;
+    
 }
+
+  
 .right-box{
     display: flex;
     justify-content: center;
